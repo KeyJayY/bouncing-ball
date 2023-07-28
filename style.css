@@ -1,0 +1,30 @@
+body
+{
+    background-color: #242424;
+    color: white;
+    text-align: center;
+}
+label
+{
+    display: inline-block;
+    margin: 20px;
+}
+.panel
+{
+    margin: auto;
+    width: 1200px;
+    margin-bottom: 15px;
+}
+fieldset legend
+{
+    text-align: right;
+}
+
+.board
+{
+    width: 1400px;
+    height: 600px;
+    margin: auto;
+    background-color: black;
+    border: 1px solid white;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=pl>
+  <head>
+    <meta charset="utf-8">
+    <title>bouncing ball</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>buncing ball</h1>
+      </header>
+      <div class="panel">
+        <fieldset>
+          <legend>control panel</legend>
+          <label>
+            angle<br>
+            <input type="range" min="-90" max="90" id="angel" oninput="document.getElementById('anglel').innerHTML = this.value">
+            <div id="anglel">0</div>
+          </label>
+          <label>
+            initial volume<br>
+            <input type="range" min="0" max="1000" id="vel" oninput="document.getElementById('vell').innerHTML = this.value">
+            <div id="vell">500</div>
+          </label>
+          <label>
+            gravity force(verticaly)<br>
+            <input type="range" min="0" max="1000" id="grav" oninput="document.getElementById('gravl').innerHTML = this.value">
+            <div id="gravl">500</div>
+          </label>
+          <br>
+          <button id="btn">Start</button>
+          <button id="btn2">Stop and draw trajectory</button>
+        </fieldset>
+      </div>
+      <div class="board">
+        <canvas id="canvas" width="1400" height="600"></canvas>
+      </div>
+    </div>
+    <script src="skrypt.js"></script>
+  </body>
+</html>
