@@ -7,6 +7,9 @@ let g = -60;
 let on = true;
 let points = [];
 
+// set audio
+var audio = new Audio('hit3.wav');
+
 // declare class point on 2d canvas
 class Point{
     constructor(x, y){
@@ -37,11 +40,13 @@ let ball = {
         this.y = this.y - this.vy * t;
         this.vy = this.vy + t * g;
         if(this.x>=1385 || this.x<=15) {
+            audio.play();
             this.vx = this.vx*(-1);
             if(this.x<=15) this.x = 16;
             else this.x = 1384;
         }
         if(this.y>=585 || this.y<=15) {
+            audio.play();
             this.vy = this.vy*(-1);
             if(this.y<=15) this.y = 16;
             else this.y = 584;
